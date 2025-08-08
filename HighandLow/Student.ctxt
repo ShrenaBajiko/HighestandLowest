@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=fullName\ totalMarks
+comment1.target=Student(java.lang.String,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getFullName()
+comment3.params=fullName
+comment3.target=void\ setFullName(java.lang.String)
+comment4.params=
+comment4.target=double\ getTotalMarks()
+comment5.params=totalMarks
+comment5.target=void\ setTotalMarks(double)
+numComments=6
