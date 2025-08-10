@@ -28,7 +28,24 @@ public class TopBottomFinder implements RankingDisplay {
         }
     }
     @Override
-    public void showHighestFive(List<Student> students) {}
+    public void showHighestFive(List<Student> students) {
+        bubbleSortDescending(students);
+        System.out.println("\nTop 5 Students:");
+        int limit = students.size() < 5 ? students.size() : 5;
+        for (int i = 0; i < limit; i++) {
+            Student s = students.get(i);
+            System.out.printf("%d. %s - %.2f%n", i + 1, s.getFullName(), s.getTotalMarks());
+        }
+    }
+
     @Override
-    public void showLowestFive(List<Student> students) {}
+    public void showLowestFive(List<Student> students) {
+        bubbleSortAscending(students);
+        System.out.println("\nBottom 5 Students:");
+        int limit = students.size() < 5 ? students.size() : 5;
+        for (int i = 0; i < limit; i++) {
+            Student s = students.get(i);
+            System.out.printf("%d. %s - %.2f%n", i + 1, s.getFullName(), s.getTotalMarks());
+        }
+    }
 }
