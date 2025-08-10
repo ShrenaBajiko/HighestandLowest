@@ -8,9 +8,17 @@ public class MainMenu {
 
         // Read file and validate
         try (BufferedReader br = new BufferedReader(new FileReader("Student.TXT"))) {
-            String line = br.readLine(); 
+            
+            String line;
+            int lineNumber = 0;
+                
 
             while ((line = br.readLine()) != null) {
+                 lineNumber++;
+
+                if (lineNumber <= 2) {
+                    continue;
+                }
                 String[] parts = line.split(",");
                 if (parts.length < 6) {
                     System.out.println("Invalid data line (not enough fields): " + line);
