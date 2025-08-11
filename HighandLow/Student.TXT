@@ -1,11 +1,11 @@
 Unit: Fundamentals of Programming
 Last Name,First Name,Student ID,A1,A2,A3
-Karki,Aanchal,23851391,27,18.5,0
-Olda,Aayush,23038615,21,,
+Karki,Aanchal,23851391,27,18.5,101
+Olda,Aayush,23038615,21,0,0
 Shrestha,Abdul,23391716,16.5,15,37.5
 Srinivasan,Abhishek,23614646,26.5,17.5,25.5
 Tarun,Abir,22966689,28,15.5,28
-Khan,Adrian,23859696,19,21,-25
+Khan,Adrian,23859696,19,21,25
 Lamahewage Gunawardena,Ahmad,23770234,18.5,15.5,34
 Mahmud Zihad,Arshdeep,23802603,27,20.5,20
 Singh,Aydin,23135257,16.5,24,26.5
@@ -17,7 +17,7 @@ Ochieng,Chanuda,23541977,18.5,25.5,33.5
 Philip,Christapher,23714397,25,18.5,31.5
 Singh,Dilshani,23227112,28,25,29.5
 Stiles,Elijah,22598943,20,24,38.5
-Aujayeb,Gregory,23692215,,21,3
+Aujayeb,Gregory,23692215,22,21,3
 Bajwa,Gurpreet Singh,23858363,14,5,1
 Tusher,Harshika,22933269,19.5,6,8
 Borowiak,Huanghao,23820553,28,26.5,36.5
@@ -39,7 +39,7 @@ Li,Pavithra,23451429,8,26,20
 Li,Priyanka,23115576,12,13,27.5
 Vring,Renz,23057393,22.5,11,20
 Chaudhary,Ritesh,23628113,20,20.5,21
-Jaiswal,Sabbir,22800745,19,17,
+Jaiswal,Sabbir,22800745,19,17,23
 Khan,Sabin,23176450,15,25,22
 Ponnamperuma Arachchige,Saeed,23727638,18.5,12.5,29
 Pudasaini,Sandula,23511679,21.5,16.5,24.5
