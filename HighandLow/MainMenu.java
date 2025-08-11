@@ -24,6 +24,7 @@ public class MainMenu {
                     System.out.println("Invalid data line (not enough fields): " + line);
                     continue;
                 }
+                
 
                 String lastName = parts[0].trim();
                 String firstName = parts[1].trim();
@@ -34,6 +35,8 @@ public class MainMenu {
 
                 for (int i = 3; i <= 5; i++) {
                     String markStr = parts[i].trim();
+                    
+                    
 
                     if (markStr.isEmpty()) {
                         System.out.printf("Validation Error: Missing mark for %s in A%d. Skipping student.%n", fullName, i - 2);
@@ -44,16 +47,25 @@ public class MainMenu {
                     double mark;
                     try {
                         mark = Double.parseDouble(markStr);
+                       
                     } catch (NumberFormatException e) {
                         System.out.printf("Validation Error: Invalid mark '%s' for %s in A%d. Skipping student.%n", markStr, fullName, i - 2);
                         invalidMarkFound = true;
                         break;
                     }
+                    
+                    
 
                     if (mark < 0) {
                         System.out.printf("Validation Error: Negative mark (%.2f) for %s in A%d. Skipping student.%n", mark, fullName, i - 2);
                         invalidMarkFound = true;
                         break;
+                    }
+                    
+                    if (mark > 100) {
+                        System.out.println("Invalid mark for " + fullName + ": " + markStr + " (must be between 0 and 100)");
+                        invalidMarkFound = true;
+                        break; // Stop checking further marks for this student
                     }
 
                     totalMarks += mark;
